@@ -15,6 +15,11 @@ docker-compose up -d
 docker exec -it ci-7.4 composer install
 ```
 
+- DAr permisos a writable:
+```bash
+docker exec -it ci-7.4 chmmod -R 777 writable/
+```
+
 - Configurar el archivo .env
 
 # Automatización para producción

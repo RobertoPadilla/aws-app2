@@ -5,10 +5,17 @@
 git clone <repository ssh or https>
 ```
 
+- Iniciar contenedor:
+```bash
+docker-compose up -d
+```
+
 - Descargar dependencias:
 ```bash
-docker exec -it <container-name> composer install
+docker exec -it ci-7.4 composer install
 ```
+
+- Configurar el archivo .env
 
 # Automatización para producción
 

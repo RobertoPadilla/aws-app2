@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  php:
+    container_name: "ci-7.4"
+    build: .
+    image: "ci:7.4"
+    volumes:
+      - ./php/:/var/www/html
+    ports:
+      - 80:80
